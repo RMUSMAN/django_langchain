@@ -4,7 +4,7 @@ from rest_framework import status
 from langchain_core.prompts import PromptTemplate
 from django.conf import settings
 from langchain_deepseek import ChatDeepSeek
-from ..serializers import LlmRequestSerializer
+from ..serializers.serializers import LlmRequestSerializer
 from utils.utils import validate_api_key 
 
 class DeepseekView(APIView):

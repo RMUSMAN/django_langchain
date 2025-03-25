@@ -2,7 +2,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
 from langchain_core.prompts import PromptTemplate
-from ..serializers import LlmRequestSerializer
+from ..serializers.serializers import LlmRequestSerializer
 from langchain_ollama.llms import OllamaLLM
 from utils.constants import MODEL_MAPPING
 

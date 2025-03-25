@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 from django.conf import settings
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import OpenAI
-from ..serializers import LlmRequestSerializer
+from ..serializers.serializers import LlmRequestSerializer
 from utils.utils import validate_api_key 
 
 class OpenAPI(APIView):
