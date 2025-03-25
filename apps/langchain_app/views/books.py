@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
 from ..models import Book
-from ..serializers import BookSerializer
+from ..serializers.serializers import BookSerializer
 
 
 class BookListCreate(generics.ListCreateAPIView):

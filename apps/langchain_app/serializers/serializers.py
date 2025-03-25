@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Book
+from ..models import Book
 
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
@@ -24,6 +24,11 @@ class LlmRequestSerializer(serializers.Serializer):
     )
     llm = serializers.ChoiceField(
         default='llama',
-        choices=['llama', 'deepseek'],
+        choices=['llama', 'deepseek', 'gemma'],
 
+    )
+    convert_to_language = serializers.CharField(
+        default='urdu',
+        required=False,
+        max_length=500
     )
