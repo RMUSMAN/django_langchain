@@ -6,6 +6,7 @@ from .views.ollama import Ollama
 from .views.language_translator import LanguageTranslator
 from .views.prompts import few_shot_prompt, zero_shot_prompt,cot_shot_prompt, role_based_agent
 from .views.rag import company_info_chatbot
+from .views.customer_support_ticket import support_chatbot
 
 
 urlpatterns = [
@@ -20,6 +21,8 @@ urlpatterns = [
     path('cot_prompt_math_tutor/', cot_shot_prompt, name='cot-shot-prompt'),
     path('role_based_agent/', role_based_agent, name='role-based-agent'),
     path('company_info_chatbot/', company_info_chatbot, name='company-info-chatbot'),
+    path('customer_support_ticket_system/', support_chatbot, name='customer-support-info-chatbot'),
+
 
 
 ]
